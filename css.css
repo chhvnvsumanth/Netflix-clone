@@ -1,0 +1,404 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background-color: black;
+    
+}
+
+.main {
+    
+    background-image: url("assits/photos/IN-en-20240603-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    height: 94vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(2000px, 100vw);
+    width: 100vw;
+  
+}
+
+.main .box {
+    height: 94vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+    background-color: black;
+}
+
+.main nav {
+    position: relative;
+    max-width: 75vw;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    height: 62px;
+    align-items: center;
+    top: 10px;
+
+}
+
+.main nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    font-family: sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 62px);
+    color: white;
+    font-size: 15px;
+    top: 28px;
+    gap: 15px;
+    padding: 0 30px;
+
+}
+
+.text> :first-child {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-weight: 900;
+    text-align: center;
+}
+
+.text> :nth-child(2) {
+    font-size: 1;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.text> :nth-child(3) {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.seperation {
+    opacity: 0.44;
+    height: 5px;
+    background-color: gray;
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+
+    padding:
+        5px 12px;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.536);
+
+
+}
+
+.btn-sign {
+    background-color: red;
+    color: aliceblue;
+    
+    border-radius: 5px;
+}
+
+.btn-red {
+    position: relative;
+    background-color: red;
+    color: aliceblue;
+    padding: 13px 27px;
+    border-radius: 9px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.login input {
+
+    padding: 9px 125px 7px 15px;
+
+    font-size: 15px;
+    background-color: rgba(23, 23, 23, 0.536);
+    color: white;
+
+
+}
+
+.first{
+    display:flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+
+}
+.secimg{
+    position: relative;
+}
+.secimg img{
+ position: relative;
+ z-index: 10;
+width: 555px;
+
+}
+.secimg video{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+
+}
+section.first > div {
+    display: flex;
+    flex-direction: column;
+}
+.first > div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+   
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+    
+}
+.faqbox:hover{
+    transition: all 0.2 ease-in-out;
+background-color:#414141;
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color:#2d2d2d;
+    padding: 24px;
+    margin: 34px auto;
+    cursor:pointer;
+    max-width: 60vw;
+    font-size: 24px;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+.footer .questions{
+   padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 34px;
+    
+
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    margin: 3vw auto;
+    gap: 23px;
+   
+
+}
+.footer a{
+    text-decoration: none;
+    color:gray;
+    text-decoration: underline;
+    font-size: 14px;
+}
+@media only screen and (max-width:1200px){
+    .first{
+        flex-wrap: wrap;
+    }
+    .main{
+        width: 99.5vw;
+        height: 61vh;
+    }
+    .main .box{
+        width: 99.5vw;
+        height: 61vh;
+    }
+    .faq h2{
+        font-size: 38px;
+    }
+    .faqbox{
+        margin: 14px auto;
+        max-width: 60vw;
+        font-size: 15px;
+    }
+    .footer{
+       
+        grid-template-columns: 1fr  1fr;
+    
+        max-width: 90vw;
+        padding: 75px 0;
+    
+    }
+    
+    
+    
+
+    .footer-item{
+        align-items: center;
+    }
+}
+@media only screen and (max-width:548px){
+    nav{
+        max-width: 90vw;
+    }
+    .main{
+        width: 99vw;
+        height: 79vh;
+
+    }
+    .main .box{
+        width: 99vw;
+        height: 79vh;
+    }
+    .text {
+        font-size: 9px;
+        top: 18px;
+    }
+    
+    .text> :first-child {
+        font-size: 1.5rem;
+    }
+    
+    .text> :nth-child(2) {
+        font-size: 0.6;
+    }
+    
+    .text> :nth-child(3) {
+        font-size: 0.6rem;
+    }
+    .first > div :first-child{
+        font-size: 29px;
+       
+    }
+    .first > div :nth-child(2){
+        font-size: 16px;
+    } 
+    .login input {
+        padding: 9px 100px 7px 15px;
+    }
+    .login{
+        flex-wrap: wrap;
+        
+    }
+    .btn-red {  
+        padding: 13px 16px;
+        top: 22px;
+    }
+    .secimg img{
+       width: 400px;
+       
+       }
+       .secimg video{
+        width: 330px;
+           top: 70px;
+           right: 23px;
+       
+       }
+       .footer a {
+        font-size: 7px;
+        font-weight: bold;
+        padding: 1px 12px;
+
+    }
+    .footer{
+        padding: 75px 30px 30px;
+    }
+    .footer-item {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+      
+    
+}
+    @media only screen and (max-width:454px){
+       
+       .first{
+        padding: 0px 68px;
+       }
+        .login input {
+            padding: 9px 100px 7px 15px;
+        }
+        .btn-red {
+            font-size: 10px;
+            
+            padding: 13px 17px;
+
+        }
+        .main{
+            width: 99vw;
+            height: 59vh;
+          
+        }
+        .main .box{
+            width: 99vw;
+            height: 59vh;
+        }
+        .text {
+            font-size: 9px;
+            top: 18px;
+        }
+        
+        .text> :first-child {
+            font-size: 1.5rem;
+        }
+        
+        .text> :nth-child(2) {
+
+            font-size: 0.6;
+        }
+        
+        .text> :nth-child(3) {
+            font-size: 0.6rem;
+        }
+        .first > div :first-child{
+            top: 38px;
+            font-size: 29px;
+           
+        }
+        .first > div :nth-child(2){
+            font-size: 16px;
+        } 
+        .main nav img {
+            width: 113px;
+          
+    }
+  
+
+   
+}
